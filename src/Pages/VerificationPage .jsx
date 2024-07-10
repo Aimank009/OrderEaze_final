@@ -27,6 +27,7 @@ const VerificationPage = () => {
           navigate("/home");
         } catch (err) {
           setError(err.message);
+          console.log(error);
         }
     };
 
@@ -40,10 +41,6 @@ const VerificationPage = () => {
                 document.getElementById(`code-input-${index + 1}`).focus();
             }
         }
-    };
-
-    const handleSubmit = () => {
-        // Do nothing
     };
 
     return (
